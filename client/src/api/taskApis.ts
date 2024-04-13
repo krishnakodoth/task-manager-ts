@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from "axios";
 import { ITasks } from "../types/task";
 
-const nodeApi = process.env.NODE_API;
+export const nodeApi = process.env.NODE_API;
 
 export const getTaskListApi = async ():Promise<AxiosResponse<ITasks[]>> => axios.get(`${nodeApi}/tasks`)
 export const addNewTaskApi = async (task:ITasks):Promise<AxiosResponse<{}>> => axios.post(`${nodeApi}/tasks`,task);

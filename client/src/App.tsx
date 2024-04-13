@@ -5,7 +5,7 @@ import ListTask from "./components/ListTask";
 
 const App:FC = () => {
   return (
-    <div className="task-manager">
+    <div className="task-manager" data-test-id="task-manager-app">
       <h1>Task Manager</h1>
       <AddTask />
       <ListTask />

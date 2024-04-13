@@ -15,7 +15,7 @@ const AddTask: FC = () => {
   };
 
   return (
-    <div className="add-task">
+    <div className="add-task" data-test-id="add-task-component">
       <div>
         <TextField
           type={"text"}

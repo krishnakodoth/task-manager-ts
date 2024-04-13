@@ -29,8 +29,8 @@ npm i dotenv
 * npm install --save-dev @types/react @types/react-dom
 
 ## Tests
-`npm install --save-dev jest`
-`npm install --save-dev react-test-renderer`
-`npm i -D @testing-library/react @testing-library/jest-dom`
 
-`npm install --save-dev @babel/preset-react`
+npm install --save-dev jest @types/jest ts-jest
+npm install -D ts-node
+npm i --save-dev enzyme enzyme-adapter-react-16
+npm i -D ts-loader

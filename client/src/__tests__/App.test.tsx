@@ -1,18 +1,11 @@
 import React from 'react';
-import { screen, render, cleanup, fireEvent } from '@testing-library/react'
+import { shallow } from 'enzyme';
 import App from "../App"
 
-/**
- * @jest-environment jsdom
- */
 describe('App component', () => {
-  // beforeAll(() => {
-  //   render(<App />)
-  // });
-
   test('should render App component', () => {
-    // const message = 'Hello World';
-    render(<App />)
-    expect(true).toBeTruthy()
+    const wrapper = shallow(<App />);
+    const AppComponent = wrapper.find("[data-test-id='task-manager-app']");
+    expect(AppComponent.length).toBe(1);
   })
 });
