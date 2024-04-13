@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "baseUrl": "src",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "jsx": "react"
+    },
+    "include": [
+      "src",
+      "client/src/custom.d.ts"
+    ],
+    "exclude": ["server/src/types/*.ts","client/src/types/*.ts", "node_modules", ".vscode"]
+  }
