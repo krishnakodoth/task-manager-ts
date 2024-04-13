@@ -1,7 +1,0 @@
-{
-  "typescript.tsdk": "node_modules\\typescript\\lib",
-  "jest.runMode": {
-    "type": "on-demand",
-    "coverage": true
-  }
-}
