@@ -26,6 +26,11 @@
 .list-task .task-item.done{
   background: #94e896;
 }
+
+.input-text{
+  border: solid 1px #989494;
+  padding: 5px 10px;
+}
 .add-task {
   display: flex;
   justify-content: center;
@@ -69,12 +74,16 @@
 
 .modal-overlay {
   backdrop-filter: brightness(30%);
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+    height: 100vh;
+    width: 100vw;
   z-index: 2;
+  overflow: hidden;
 }
 .modal {
   min-width: 350px;

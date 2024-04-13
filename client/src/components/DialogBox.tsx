@@ -1,14 +1,15 @@
 import React, { FC } from "react";
 import { createPortal } from "react-dom";
 
-interface IDialogBox{
-  children:React.ReactNode
+interface IDialogBox {
+  children: React.ReactNode;
 }
-const DialogBox:FC<IDialogBox> = ({children}) => {
+const DialogBox: FC<IDialogBox> = ({ children }) => {
   const modalDiv = (
     <>
-      <div className="modal-overlay"></div>
-      <div className="modal">{children}</div>
+      <div className="modal-overlay">
+        <div className="modal">{children}</div>
+      </div>
     </>
   );
   let portalDiv = document.getElementById("portal-root") as HTMLElement;

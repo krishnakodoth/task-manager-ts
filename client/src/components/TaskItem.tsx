@@ -16,6 +16,10 @@ const TaskItem:FC<ITaskItem> = ({task}) => {
       .catch((err) => console.log(err));
   };
 
+  const onDialogClose = () => {
+    setShowEditDialog(false);
+  }
+
   return (
     <div className={`task-item ${task.status}`} key={task._id}>
       <h3>{task.title}</h3>
@@ -26,7 +30,8 @@ const TaskItem:FC<ITaskItem> = ({task}) => {
         showEditDialog && (
           <EditTask 
           task={task}
-          onClose={()=>setShowEditDialog(false)}
+          // onClose={()=>setShowEditDialog(false)}
+          onClose={onDialogClose}
           />
         )
       }

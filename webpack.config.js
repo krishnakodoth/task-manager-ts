@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const dotenv = require("dotenv").config({ path: __dirname + "/client/.env" });
-console.log(__dirname + "/client/.env");
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
