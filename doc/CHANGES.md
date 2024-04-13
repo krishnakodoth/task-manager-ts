@@ -14,7 +14,7 @@ npm i dotenv
 
 ![MongoDB](mongodb.png)
 
-## Page
+## Pages
 
 ![alt text](ui.png)
 
